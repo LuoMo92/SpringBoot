@@ -17,4 +17,16 @@ public class DemoController {
         return "index";
     }
 
+    @RequestMapping("/freemarker")
+    public String freemarker(ModelMap map) {
+        map.addAttribute("host", "http://www.freemarker.com");
+        return "freemarker";
+    }
+
+    @RequestMapping("/vm")
+    public String vm(ModelMap map) {
+        map.addAttribute("host", "http://www.vm.com");
+        return "index";
+    }
+
 }
