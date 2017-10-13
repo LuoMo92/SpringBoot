@@ -1,15 +1,29 @@
 package com.luomo.study.spring.boot.chapter3.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
 /**
  * Created by LiuMei on 2017-09-19.
  */
+@Entity
 public class User {
 
+    @Id
+    @GeneratedValue
     private Long id;
 
     private String name;
 
     private Integer age;
+
+    public User(){}
+
+    public User(String name, Integer age) {
+        this.name = name;
+        this.age = age;
+    }
 
     public Long getId() {
         return id;
