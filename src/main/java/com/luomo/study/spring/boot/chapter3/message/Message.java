@@ -1,5 +1,6 @@
-package com.luomo.study.spring.boot.chapter3.domain;
+package com.luomo.study.spring.boot.chapter3.message;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -9,21 +10,23 @@ import javax.persistence.Id;
  * @date 2017-10-31.
  */
 @Entity
-public class User {
+public class Message {
 
     @Id
     @GeneratedValue
     private Long id;
 
+    @Column(nullable = false)
     private String name;
 
-    private Integer age;
+    @Column(nullable = false)
+    private String content;
 
-    public User(){}
+    public Message(){}
 
-    public User(String name, Integer age) {
+    public Message(String name, String content) {
         this.name = name;
-        this.age = age;
+        this.content = content;
     }
 
     public Long getId() {
@@ -42,11 +45,12 @@ public class User {
         this.name = name;
     }
 
-    public Integer getAge() {
-        return age;
+    public String getContent() {
+        return content;
     }
 
-    public void setAge(Integer age) {
-        this.age = age;
+    public void setContent(String content) {
+        this.content = content;
     }
+
 }

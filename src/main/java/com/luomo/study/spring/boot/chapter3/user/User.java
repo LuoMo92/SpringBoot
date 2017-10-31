@@ -1,12 +1,11 @@
-package com.luomo.study.spring.boot.chapter3.domain;
+package com.luomo.study.spring.boot.chapter3.user;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 /**
- * @author LiuMei
- * @date 2017-10-31.
+ * Created by LiuMei on 2017-09-19.
  */
 @Entity
 public class User {

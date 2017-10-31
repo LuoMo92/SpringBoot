@@ -1,9 +1,9 @@
 package com.luomo.study.spring.boot;
 
 import com.google.gson.Gson;
-import com.luomo.study.spring.boot.chapter3.domain.User;
 import com.luomo.study.spring.boot.chapter3.repository.UserRepository;
 import com.luomo.study.spring.boot.chapter3.service.UserService;
+import com.luomo.study.spring.boot.chapter3.domain.User;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
