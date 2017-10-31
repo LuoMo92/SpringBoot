@@ -3,13 +3,14 @@ package com.luomo.study.spring.boot.chapter3.domain;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import java.io.Serializable;
 
 /**
  * @author LiuMei
  * @date 2017-10-31.
  */
 @Entity
-public class User {
+public class User implements Serializable {
 
     @Id
     @GeneratedValue
